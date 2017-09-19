@@ -1,7 +1,11 @@
 import React from 'react';
 
-const ToDoForm = React.createClass({
-  render: function() {
+class ToDoForm extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
     return (
       <div>
         <form>
@@ -19,6 +23,6 @@ const ToDoForm = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default ToDoForm;

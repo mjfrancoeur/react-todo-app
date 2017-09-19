@@ -1,19 +1,17 @@
 import React from 'react';
 
-// class ToDo extends React.component {
-//   render() {
-//     return <h1>Hello, this is the ToDo component</h1>;
-//   }
-// }
+class ToDo extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-const ToDo = React.createClass({
-  render: function() {
+  render() {
     return (
       <div>
         <h1>This is the ToDo component</h1>
       </div>
     );
   }
-});
+}
 
 export default ToDo;

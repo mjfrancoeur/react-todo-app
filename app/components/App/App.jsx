@@ -4,10 +4,15 @@ import ToDoForm from '../ToDoForm/ToDoForm';
 
 import ToDo from '../ToDo/ToDo';
 
-const App = React.createClass({
-  getInitialState: function() {
-    
-  },
+class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      currentToDo: '',
+      ToDos: [],
+    };
+  }
+
   render() {
     return (
       <div>
@@ -17,6 +22,6 @@ const App = React.createClass({
       </div>
     );
   }
-});
+}
 
 export default App;
